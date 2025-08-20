@@ -1,3 +1,31 @@
 body {
   background-color: black;
+  margin:0%
+}
+
+.banner {
+  background: transparent;
+  color: white;
+  text-align: center;
+  font-size: 10vw;
+  margin : 1%;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 10px; 
+  padding: 10px;
+}
+
+.button-grid button {
+  padding: 20px;
+  font-size: 5vw;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .button-grid {
+    grid-template-columns: 1fr; 
+  }
 }
